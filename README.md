@@ -1,4 +1,4 @@
-# CoinPices
+# CoinPrices
 
 A new Flutter application.
 
