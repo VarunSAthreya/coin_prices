@@ -1,6 +1,9 @@
-# coinprice
+# CoinPices
 
 A new Flutter application.
+
+# API
+For getting API head to : https://www.coinapi.io/
 
 ## Getting Started
 
