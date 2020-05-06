@@ -10,34 +10,7 @@ class PriceScreen extends StatefulWidget {
 class _PriceScreenState extends State<PriceScreen> {
   String selectedCurrency = 'AUD';
   String selectedCoin = 'BTC';
-
-  DropdownButton<String> androidDropdown() {
-    List<DropdownMenuItem<String>> dropdownItems = [];
-    for (String currency in currenciesList) {
-      var newItem = DropdownMenuItem(
-        child: Text(
-          currency,
-          style: TextStyle(
-            color: Colors.black
-          ),
-        ),
-        value: currency,
-      );
-      dropdownItems.add(newItem);
-    }
-
-    return DropdownButton<String>(
-      value: selectedCurrency,
-      items: dropdownItems,
-      onChanged: (value) {
-        setState(() {
-          selectedCurrency = value;
-          getData();
-        });
-      },
-    );
-  }
-
+  
   CupertinoPicker iOSPicker2() {
     List<Text> pickerItems = [];
     for (String coin in cryptoList) {
